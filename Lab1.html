@@ -1,0 +1,149 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<! IMPORTANT to use a CSS file - external>
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<title>Questionaire</title>
+</head>
+
+<body>
+	<h1>Survey</h1>
+	<form id="myform" action="index.php">
+		<br>
+		<br>
+		<h2>What do you think of the UI on the <a href="http://spotify.com">Spotify</a> site?</h2>
+		<br>
+		<br>
+		<p>
+			<a href="http://spotify.com">
+				<img src="images/FrontPage.png" alt="http://spotify.com" width="500" height="300">
+				<br>
+			</a>
+		</p>
+		<br>
+		<div class="question">
+			<h2> Personal Information </h2>
+			First Name: <input type="text" name="firstname">
+			Last Name: <input type="text" name="lastname">
+			<br>
+			<br>
+
+			Are you:
+			<br>
+			<input type="radio" name="sex" value="male">Male
+			<br>
+			<input type="radio" name="sex" value="female">Female
+			<br>
+			<br>
+
+			What best applies to you:
+			<select name="occupation">
+				<option value="undergrad">Undergrad Student</option>
+				<option value="graduate">Graduate Student</option>
+				<option value="unemployed">Unemployed</option>
+				<option value="parttime">Working Part Time</option>
+				<option value="fulltime">Working Full Time</option>
+			</select>
+			<br>
+			<br>
+			Your age is:
+			<br>
+			<input type="radio" name="age" value="under18">Under 18<br>
+			<input type="radio" name="age" value="18to22">18 - 22<br>
+			<input type="radio" name="age" value="23to30">23 - 30<br>
+			<input type="radio" name="age" value="31to49">31 - 49<br>
+			<input type="radio" name="age" value="50plus">50+<br>
+
+		</div>
+
+		<div class=usage>
+			How often do you use <a href="http://spotify.com">Spotify</a>?:
+			<br>
+			<input type="radio" name="Usage" value="rarely">Rarely
+			<br>
+			<input type="radio" name="Usage" value="monthly">Once a month
+			<br>
+			<input type="radio" name="Usage" value="weekly">Once a week
+			<br>
+			<input type="radio" name="Usage" value="almostdaily">Once every few days
+			<br>
+			<input type="radio" name="Usage" value="daily">At least once a day
+			<br>
+		</div>
+
+		<div class=usage>
+			Select which devices you access <a href="http://spotify.com">Spotify</a> from?:
+			<br>
+			<input type="checkbox" id="phone" name="phone" value="Mobile Phone">
+			<label for="phone"> Mobile Phone</label>
+			<br>
+			<input type="checkbox" id="tablet" name="tablet" value="Tablet">
+			<label for="tablet"> Tablet</label>
+			<br>
+			<input type="checkbox" id="car" name="car" value="Car">
+			<label for="car"> In Car</label>
+			<br>
+			<input type="checkbox" id="gaming" name="gaming" value="Gaming">
+			<label for="gaming"> Gaming Console</label>
+			<br>
+			<input type="checkbox" id="desktop" name="desktop" value="Desktop">
+			<label for="desktop"> Desktop or Laptop</label>
+			<br>
+			<input type="checkbox" id="smartwatch" name="smartwatch" value="SmartWatch">
+			<label for="smartwatch"> Smart Watch</label>
+			<br>
+		</div>
+
+		<div class=satisfactory>
+			<h2>Please select your level of satisfaction with the following:</h2>
+			1. The OVERAL ease of use for the site:
+			<br>
+			<input type="radio" name="ease" value="vdisa">Very Disatisfied
+			<br>
+			<input type="radio" name="ease" value="disa">Disatisfied
+			<br>
+			<input type="radio" name="ease" value="ok">Ok
+			<br>
+			<input type="radio" name="ease" value="satisfied">Satisfied
+			<br>
+			<input type="radio" name="ease" value="vsatisfied">Very Satisfied
+			<br>
+			<br>
+			2. The total time taken to access content you went to the site for (how efficient is the sites layout):
+			<br>
+			<input type="radio" name="ease" value="vdisa">Very Disatisfied
+			<br>
+			<input type="radio" name="ease" value="disa">Disatisfied
+			<br>
+			<input type="radio" name="ease" value="ok">Ok
+			<br>
+			<input type="radio" name="ease" value="satisfied">Satisfied
+			<br>
+			<input type="radio" name="ease" value="vsatisfied">Very Satisfied
+			<br>
+		</div>
+
+		<div class=otherquestion>
+			When accessing the site, how long (in minutes) do you stay for?: <input type="text" name="timepervisit">
+		</div>
+		<div class=otherquestion>
+			Any Additional Comments?:
+			<br>
+			<br>
+			<textarea rows="8" cols="45"></textarea>
+			<br>
+			<br>
+		</div>
+		<button id="submitButton" type="button" class="block">
+			SUBMIT your questionnaire. Thank you!
+		</button>
+		<br>
+
+		<p id="signature">Site created by Rylan Deck (8175333)</p>
+		<p id="signature">May 2020</p>
+
+	</form>
+</body>
+
+</html>
